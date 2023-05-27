@@ -14,10 +14,10 @@
 	}
 </script>
 
-<main>
+<div>
 	<h1 class="counter">Licznik: {counter}</h1>
 	<button on:click={incrementCounter}>Zwiększ</button>
-</main>
+</div>
 
 <style>
 	.counter {
