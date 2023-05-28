@@ -13,6 +13,7 @@
 		"prerender": "ng run angular-universal:prerender"
 	},
 	"private": true,
+	"type": "module",
 	"dependencies": {
 		"@angular/animations": "^16.0.0",
 		"@angular/common": "^16.0.0",
