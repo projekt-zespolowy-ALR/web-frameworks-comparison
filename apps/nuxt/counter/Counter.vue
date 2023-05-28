@@ -1,11 +1,17 @@
 <script setup lang="ts">
-	import {watch, ref} from "vue";
+	import {watch, ref, onMounted} from "vue";
 
 	let counter = ref(0);
+	let isMounted = ref(false);
+	onMounted(() => {
+		isMounted.value = true;
+	});
 	watch(
-		counter,
-		(newCounter) => {
-			alert(newCounter);
+		[counter, isMounted],
+		([newCounterValue]) => {
+			if (isMounted.value) {
+				alert(newCounterValue);
+			}
 		},
 		{immediate: true}
 	);
