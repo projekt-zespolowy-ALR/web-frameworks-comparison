@@ -44,7 +44,7 @@
 		"removeComments": true,
 		"allowJs": false,
 		"maxNodeModuleJsDepth": 0,
-		"allowSyntheticDefaultImports": false,
+		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"noImplicitUseStrict": false,
 		"noStrictGenericChecks": false,
