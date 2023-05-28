@@ -2,9 +2,13 @@
 	import {watch, ref} from "vue";
 
 	let counter = ref(0);
-	watch(counter, (newCounter) => {
-		alert(newCounter);
-	});
+	watch(
+		counter,
+		(newCounter) => {
+			alert(newCounter);
+		},
+		{immediate: true}
+	);
 	const incrementCounter = () => {
 		++counter.value;
 	};
